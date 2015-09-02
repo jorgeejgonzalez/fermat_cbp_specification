@@ -3,8 +3,6 @@
 ### Crypto Broker
 * Crypto Broker Wallet Installation
 * Crypto Broker Identity Creation
- * Needed for usage of the Crypto Broker Wallet
- * Association of Key Pair with Alias
 * Crypto Broker Crypto Stocking
  * Needed to Make Crypto Business Transactions
 * Crypto Broker Fiat Cash Stocking
