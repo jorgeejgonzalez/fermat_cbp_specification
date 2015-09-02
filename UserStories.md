@@ -1,7 +1,7 @@
 # CBP User Stories
 
 ### Crypto Broker
-* [Crypto Broker Wallet Installation](stories/stories/Crypto_Broker_Wallet_Installation.story)
+* [Crypto Broker Wallet Installation](stories/Crypto_Broker_Wallet_Installation.story)
 * Crypto Broker Identity Creation
 * Crypto Broker Crypto Stocking
  * Needed to Make Crypto Business Transactions
