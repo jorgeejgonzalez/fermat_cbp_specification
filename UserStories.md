@@ -3,10 +3,14 @@
 ### Crypto Broker
 * [Crypto Broker Wallet Installation](stories/Crypto_Broker_Wallet_Installation.story)
 * [Crypto Broker Identity Creation](stories/Crypto_Broker_Identity_Creation.story)
-* Crypto Broker Crypto Stocking
-* Crypto Broker Fiat Cash Stocking
-* Crypto Broker Fiat Bank Stocking
+* [Crypto Broker Crypto Stocking](stories/Crypto_Broker_Crypto_Stocking.story)
+* [Crypto Broker Sell Notification](stories/Crypto_Broker_Sell_Notification.story)
+* [Crypto Broker Negotiation Process](Crypto_Broker_Negotiation_Process.story)
+* [Crypto Broker Send And Revice Process](Crypto_Broker_Send_And_Revice_Process.story)
 
 ## Crypto Customer
 * [Crypto Customer Wallet Installation](stories/Crypto_Customer_Wallet_Installation.story)
 * [Crypto Customer Identity Creation](stories/Crypto_Customer_Identity_Creation.story)
+* [Crypto Customer Crypto Buy Request](stories/Crypto_Customer_Crypto_Buy_Request.story)
+* [Crypto Customer Negotiation Process](Crypto_Customer_Negotiation_Process.story)
+* [Crypto Customer Send And Revice Process](Crypto_Customer_Send_And_Revice_Process.story)
