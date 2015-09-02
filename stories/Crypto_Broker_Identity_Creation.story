@@ -13,4 +13,20 @@ Then Fermat should Create a Private Key
   And Derive a Public Key
   And associate them with the Alias
 
-Scenario
+Scenario: Multiple Crypto Broker Identities
+Given I have already created a Crypto Broker Identity
+When I want to create an Identity
+  And I provide an Alias
+  And I provide an Image
+  And the Alias has not been used before in my device
+Then Fermat should Create a Private Key
+  And Derive a Public Key
+  And associate them with the Alias
+
+Scenario: Multiple Crypto Broker Identities
+Given I have already created a Crypto Broker Identity
+When I want to create an Identity
+  And I provide an Alias
+  And I provide an Image
+  And the Alias has already been used in my device
+Then I should not be able to create a new Crypto Broker Identity
