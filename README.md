@@ -1,6 +1,6 @@
 # CBP Modules Specification
 
-This is the simplified specification of the Crypto Broker Platform
+This is the simplified specification of the Crypto Broker Platform plugins
 
 ## Wallet
 * **Crypto Broker**: frontend de las actividades financieras de un Crypto Broker(vender crypto, vender cash, inyeccion de capital) y provee un balance contable unificado
