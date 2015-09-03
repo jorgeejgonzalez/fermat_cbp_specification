@@ -2,20 +2,16 @@
 
 This is the simplified specification of the Crypto Broker Platform plugins
 
-## Android
-
-### Wallet
+## Wallet
 * **Crypto Broker**: frontend de las actividades financieras de un Crypto Broker(vender crypto, vender cash, inyeccion de capital) y provee un balance contable unificado
 * **Crypto Customer**: frontend de las actividades financieras de un Crypto Customer(comprar crypto, comprar cash) y provee un balance contable unificado
 
-### SubApp
+## SubApp
 * **Crypto Broker**: frontend de la administracion de identidades de los Brokers, la relacion con otros brokers y descubrimiento de Brokers para los Customers (solicitudes de conexion, acuerdos especiales, etc)
 * **Crypto Customer**: frontend de la administracion de identidades de los Customers y la relacion con otros Customers (notificaciones de un Broker, acuerdos especiales, etc)
 * **Customers**: frontend de la gestion de contactos entre un Broker y sus Customers
 * **SubApp Manager**: frontend del gestor de las SubApps instaladas en el dispositivo
 * **Wallet Manager**: frontend del gestor de las Wallets instaladas
-
-## Java
 
 ## Wallet Module
 * **Crypto Broker**: gestion de la informacion y las actividades financieras de un Broker
