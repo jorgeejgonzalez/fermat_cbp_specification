@@ -1,0 +1,19 @@
+Story: Crypto Broker Publish
+
+In order to be discovered by Crypto Customers
+  I need to publish my Crypto Broker Identity
+  And my sale prices
+
+Scenario: Initial Information Publish
+  Given I have not performed any Business Transaction
+    And I have have already obtained my Crypto versus Fiat Exchange Rates
+    And I have already configured my initial spread
+  When I decide to start my activities as a Crypto Broker
+  Then I should be registered in the Fermat Network
+    And my potential Crypto Customers should visualize my Photo
+    And they should visualize my Alias
+    And they should visualize my Crypto Sale Price
+    And they should visualize my Fiat Sale Price
+
+  Scenario: Update Information Published
+    given 
