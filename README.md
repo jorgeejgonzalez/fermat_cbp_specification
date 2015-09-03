@@ -2,45 +2,51 @@
 
 This is the simplified specification of the Crypto Broker Platform plugins
 
-## Wallet
+## Android
+
+### Wallet
 * **Crypto Broker**: frontend de las actividades financieras de un Crypto Broker(vender crypto, vender cash, inyeccion de capital) y provee un balance contable unificado
 * **Crypto Customer**: frontend de las actividades financieras de un Crypto Customer(comprar crypto, comprar cash) y provee un balance contable unificado
 
-## SubApp
+### SubApp
 * **Crypto Broker**: frontend de la administracion de identidades de los Brokers, la relacion con otros brokers y descubrimiento de Brokers para los Customers (solicitudes de conexion, acuerdos especiales, etc)
 * **Crypto Customer**: frontend de la administracion de identidades de los Customers y la relacion con otros Customers (notificaciones de un Broker, acuerdos especiales, etc)
 * **Customers**: frontend de la gestion de contactos entre un Broker y sus Customers
 * **SubApp Manager**: frontend del gestor de las SubApps instaladas en el dispositivo
 * **Wallet Manager**: frontend del gestor de las Wallets instaladas
 
-## Wallet Module
+## Java
+
+### Wallet Module
 * **Crypto Broker**: gestion de la informacion y las actividades financieras de un Broker
 * **Crypto Customer**: gestion de la informacion y las actividades financieras de un Customer
 
-## SubApp Module
+### SubApp Module
 * **Crypto Broker**: administracion de identidades de los Brokers y la relacion con otros Brokers
 * **Crypto Customer**: administracion de identidades de los Customers y la relacion con otros Customers
 * **Customers**: gestion de contactos entre un Broker y sus Customers
 * **SubApp Manager**: gestor de las SubApps instaladas en el dispositivo
 * **Wallet Manager**: gestor de las Wallets instaladas
 
-## Contract
-* **Quotes**: negociacion de una transaccion entre dos actores
+### Contract
+* **Crypto Broker Crypto Buy Request**: solicitud de compra de Crypto de un Crypto Customer
+* **Crypto Broker Fiat Cash Buy Request**: solicitud de compra de Fiat Cash de un Crypto Customer
+* **Crypto Broker Fiat Bank Buy Request**: solicitud de compra de Crypto de un Crypto Customer
 
-## Middleware
+### Middleware
 * **Customers**: administra y subclasifica a los Crypto Customers de un Crypto Broker
 
-## Actor
+### Actor
 * **Crypto Broker**: administra la relacion con los Brokers (establecer conexion, listar contactos de este tipo, etc)
 * **Crypto Customer**: administra la relacion con los Customers
 
-## Agent
+### Agent
 * **Crypto Broker**: evaluacion de balances consolidados y calculo de indices para la ganancia en las Business Transactions de un Crypto Broker.
 
-## World
+### World
 * **Fiat Index**: establece la relacion de valor entre dos monedas Fiat (por ejemplo: bolivar vs dolar).
 
-## Business Transaction
+### Business Transaction
 * **CRYPTO BROKER**
  * **Stock Crypto**: inyeccion de capital(mercaderia?) Crypto para el Broker. (stock?)
  * **Stock Fiat Cash**: inyeccion de capital en Cash Fiat para el Broker.
@@ -53,21 +59,21 @@ This is the simplified specification of the Crypto Broker Platform plugins
  * **Crypto Broker Fiat Cash Buy**: compra de monedas Cash Fiat del Customer al Broker.
  * **Crypto Broker Fiat Bank Buy**: compra de monedas Cash Fiat del Customer al Broker.
 
-## Crypto Transaction (no esta cerrada la idea)(reutilizamos lo del CCP?)
+### Crypto Transaction (no esta cerrada la idea)(reutilizamos lo del CCP?)
 * **Send Crypto**: envio de monedas Crypto a traves del Blockchain.
 * **Receive Crypto**: recepcion de monedas Crypto a traves del Blockchain.
 
-## Fiat Cash Transaction
+### Fiat Cash Transaction
 * **Give Fiat Cash On Hand**: registro de pago con efectivo Fiat Cash.
 * **Receive Fiat Cash On Hand**: registro de cobro con efectivo Fiat Cash.
 * **Send Fiat Cash Delivery**: envio de Fiat Cash a traves de un tercero.
 * **Receive Fiat Cash Delivery**: recepcion de Fiat Cash a traves de un tercero.
 
-## Fiat Bank Transaction
+### Fiat Bank Transaction
 * **Make Offline Fiat Bank Deposit**: registro manual de un deposito hecho con Fiat en una cuenta bancaria.
 * **Receive Offline Fiat Bank Deposit**: registro manual de recepcion de un deposito hecho con Fiat en una cuenta bancaria.
 
-## Wallet (reutilizamos las wallets crypto del CCP?)
+### Wallet (reutilizamos las wallets crypto del CCP?)
 * **CRYPTO BROKER**
  * **Crypto Broker**: gestiona el balance crypto del Crypto Broker.
  * **Cash**: gestiona el balance efectivo del Crypto Broker.
@@ -75,10 +81,10 @@ This is the simplified specification of the Crypto Broker Platform plugins
 * **CRYPTO CUSTOMER**
  * **Crypto Customer**: gestiona el balance crypto del Crypto Customer.
 
-## Identity
+### Identity
 * **Crypto Broker**: gestiona la Clave Privada y Publica del Broker asociadas con un alias.
 * **Crypto Customer**: gestiona la Clave Privava y Publica del Customer asociadas con un alias.
 
-## Network Services
+### Network Service
 * **Crypto Broker**: maneja la comunicacion entre Brokers y los actores que deseen comunicarse con el (incluido otros Brokers)
 * **Crypto Customer**: maneja la comunicacion Customer - Broker.
