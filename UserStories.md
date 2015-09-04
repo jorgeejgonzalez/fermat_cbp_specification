@@ -13,6 +13,5 @@
 * [Crypto Customer Wallet Installation](stories/Crypto_Customer_Wallet_Installation.story)
 * [Crypto Customer Identity Creation](stories/Crypto_Customer_Identity_Creation.story)
 * [Crypto Broker Discovery](stories/Crypto_Broker_Discovery.story)
-* [Crypto Broker Selection](stories/Crypto_Broker_Selection.story)
 * [Crypto Broker Buy Negotiation](stories/Crypto_Broker_Buy_Negotiation.story)
 * [Crypto Broker Buy Execution](stories/Crypto_Broker_Buy_Execution.story)

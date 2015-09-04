@@ -2,7 +2,7 @@ Story: Crypto Broker Publish
 
 In order to be discovered by Crypto Customers
   I need to publish my Crypto Broker Identity
-  And my sale prices
+  And my Sale prices
 
 Scenario: Initial Information Publish
   Given I have not performed any Business Transaction

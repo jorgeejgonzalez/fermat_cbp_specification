@@ -5,7 +5,7 @@ This is the simplified specification of the Crypto Broker Platform plugins
 ## Android
 
 ### Wallet
-* **Crypto Broker**: frontend de las actividades financieras de un Crypto Broker(vender crypto, vender cash, inyeccion de capital) y provee un balance contable unificado
+* **crypto-broker**: frontend de las actividades financieras de un Crypto Broker(vender crypto, vender cash, inyeccion de capital) y provee un balance contable unificado
 * **Crypto Customer**: frontend de las actividades financieras de un Crypto Customer(comprar crypto, comprar cash) y provee un balance contable unificado
 
 ### SubApp
@@ -29,9 +29,10 @@ This is the simplified specification of the Crypto Broker Platform plugins
 * **Wallet Manager**: gestor de las Wallets instaladas
 
 ### Contract
-* **Crypto Broker Crypto Buy Request**: solicitud de compra de Crypto de un Crypto Customer
-* **Crypto Broker Fiat Cash Buy Request**: solicitud de compra de Fiat Cash de un Crypto Customer
-* **Crypto Broker Fiat Bank Buy Request**: solicitud de compra de Crypto de un Crypto Customer
+* **Crypto Broker Fiat Money Buy**: solicitud de compra de Crypto de un Crypto Customer
+* **Crypto Broker Fiat Money Buy**: solicitud de compra de Fiat Cash de un Crypto Customer
+* **Crypto Customer Market Money Sell**: solicitud de compra de Crypto de un Crypto Customer
+* **Crypto Customer Fiat Money Sell**: solicitud de compra de Fiat Cash de un Crypto Customer
 
 ### Middleware
 * **Customers**: administra y subclasifica a los Crypto Customers de un Crypto Broker
@@ -48,14 +49,14 @@ This is the simplified specification of the Crypto Broker Platform plugins
 
 ### Business Transaction
 * **CRYPTO BROKER**
- * **Stock Crypto**: inyeccion de capital(mercaderia?) Crypto para el Broker. (stock?)
- * **Stock Fiat Cash**: inyeccion de capital en Cash Fiat para el Broker.
- * **Stock Fiat Bank**: inyeccion de capital en Cash Fiat para el Broker.
- * **Crypto Customer Crypto Sale**: venta de monedas Crypto del Broker a otros actores.
+ * **Stock Market Crypto**: recarga de stock Crypto de Market Money.
+ * **Stock Fiat Cash**: recarga de stock Cash de Fiat Money.
+ * **Stock Fiat Bank**: recarga de stock Bank de Market Money.
+ * **Crypto Customer Market Crypto Sale**: venta de monedas Crypto del Broker a otros actores.
  * **Crypto Customer Fiat Cash Sale**: venta de monedas Cash Fiat del Broker a otros actores.
  * **Crypto Customer Fiat Bank Sale**: venta de monedas Cash Fiat del Broker a otros actores.
 * **CRYPTO CUSTOMER**
- * **Crypto Broker Crypto Buy**: compra de monedas Crypto del Customer al Broker.
+ * **Crypto Broker Market Crypto Buy**: compra de monedas Crypto del Customer al Broker.
  * **Crypto Broker Fiat Cash Buy**: compra de monedas Cash Fiat del Customer al Broker.
  * **Crypto Broker Fiat Bank Buy**: compra de monedas Cash Fiat del Customer al Broker.
 
